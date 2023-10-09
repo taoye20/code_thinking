@@ -37,10 +37,13 @@
     <Filter Include="源文件\贪心算法">
       <UniqueIdentifier>{e789f51b-7353-44a4-874c-76675b8c6544}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\动态规划">
+      <UniqueIdentifier>{5b4c0fc3-4489-433c-b2e2-ccd83cbdc868}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="452.用最少数量的箭引爆气球.cpp">
-      <Filter>源文件\贪心算法</Filter>
+    <ClCompile Include="416分割等和子集.cpp">
+      <Filter>源文件\动态规划</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
