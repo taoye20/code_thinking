@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="300最长递增子序列.cpp" />
+    <ClCompile Include="583两个字符串的删除操作.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="随想记录.txt" />

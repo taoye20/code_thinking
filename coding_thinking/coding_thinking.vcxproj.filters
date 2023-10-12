@@ -42,7 +42,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="300最长递增子序列.cpp">
+    <ClCompile Include="583两个字符串的删除操作.cpp">
       <Filter>源文件\动态规划</Filter>
     </ClCompile>
   </ItemGroup>
