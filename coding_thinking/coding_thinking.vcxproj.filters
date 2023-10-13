@@ -40,15 +40,18 @@
     <Filter Include="源文件\动态规划">
       <UniqueIdentifier>{5b4c0fc3-4489-433c-b2e2-ccd83cbdc868}</UniqueIdentifier>
     </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="583两个字符串的删除操作.cpp">
-      <Filter>源文件\动态规划</Filter>
-    </ClCompile>
+    <Filter Include="源文件\单调栈">
+      <UniqueIdentifier>{177e3ced-1a8e-435d-9920-525dd4f1684c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="随想记录.txt">
       <Filter>源文件</Filter>
     </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="496下一个更大元素I.cpp">
+      <Filter>源文件\单调栈</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
