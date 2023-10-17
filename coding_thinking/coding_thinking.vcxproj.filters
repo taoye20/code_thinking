@@ -43,6 +43,9 @@
     <Filter Include="源文件\单调栈">
       <UniqueIdentifier>{177e3ced-1a8e-435d-9920-525dd4f1684c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\图论">
+      <UniqueIdentifier>{b3bb37d7-71d2-4ec0-96c4-fca352bc7eca}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="随想记录.txt">
@@ -50,8 +53,8 @@
     </Text>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="496下一个更大元素I.cpp">
-      <Filter>源文件\单调栈</Filter>
+    <ClCompile Include="200岛屿数量.cpp">
+      <Filter>源文件\图论</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
