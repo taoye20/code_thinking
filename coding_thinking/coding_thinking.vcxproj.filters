@@ -53,11 +53,8 @@
     </Text>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="并查集之1971寻找图中是否存在路径.cpp">
-      <Filter>源文件\图论</Filter>
-    </ClCompile>
-    <ClCompile Include="841钥匙和房间.cpp">
-      <Filter>源文件\图论</Filter>
+    <ClCompile Include="77题.组合.cpp">
+      <Filter>源文件\回溯</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

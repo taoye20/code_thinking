@@ -1,6 +1,20 @@
 #include<iostream>
 using namespace std;
 
+
+//template<class T>
+//class ListNODE {
+//public:
+//	typedef T value_type;
+//	typedef& T reference;
+//	typedef* T pointer;
+//
+//	value_type val;
+//	ListNODE* next;
+//	ListNODE* befor;
+//	ListNODE(value_type v) : val(v), next(nullptr), befor(nullptr) {}
+//};
+
 struct ListNode
 {
 	int val;
@@ -30,7 +44,14 @@ ListNode* CreatList(int n) {
 class Solution {
 public:
 	ListNode* getIntersectionNode(ListNode* headA, ListNode* headB) {
-		
+		ListNode* pa = headA;
+		ListNode* pb = headB;
+		while (pa || pb) {
+			if (pa == pb) return pa;
+			pa = (pa == nullptr) ? headB : pa->next;
+			pb = 
+		}
+		return pa;
 	}
 }solution;
 

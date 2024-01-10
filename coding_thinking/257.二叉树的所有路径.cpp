@@ -84,6 +84,22 @@ public:
 		}
 	}
 
+	//void traversal(TreeNode* cur, string s, vector<string>& res) {
+	//	s += to_string(cur->val);
+	//	if (cur->left == NULL && cur->right == NULL) {
+	//		res.push_back(s);
+	//		return;
+	//	}
+	//	if (cur->left) traversal(cur->left, s + "->", res);
+	//}
+
+	//vector<string> binaryTreePaths(TreeNode* root) {
+	//	vector<string> res;
+	//	string s;
+	//	traversal(root, s, res);
+	//	return res;
+	//}
+
 	void traversal(TreeNode* cur, string s, vector<string>& res) {
 		s += to_string(cur->val);
 		if (cur->left == NULL && cur->right == NULL) {

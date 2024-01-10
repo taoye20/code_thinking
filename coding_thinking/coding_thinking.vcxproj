@@ -22,8 +22,7 @@
     <Text Include="随想记录.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="841钥匙和房间.cpp" />
-    <ClCompile Include="并查集之1971寻找图中是否存在路径.cpp" />
+    <ClCompile Include="77题.组合.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

@@ -68,6 +68,14 @@ public:
 	//	return root;
 	//}
 
+	//TreeNode* invertTree(TreeNode* root) {
+	//	if (root == NULL) return root;
+	//	swap(root->left, root->right);
+	//	invertTree(root->left);
+	//	invertTree(root->right);
+	//	return root;
+	//}
+
 	//第二思想，遍历，前序遍历
 	TreeNode* invertTree(TreeNode* root) {
 		if (root == NULL) return root;
@@ -82,6 +90,18 @@ public:
 		}
 		return root;
 	}
+
+	//TreeNode* invertTree(TreeNode* root) {
+	//	stack<TreeNode*> st;
+	//	st.push(root);
+	//	while (!st.empty()) {
+	//		TreeNode* cur = st.top();
+	//		st.pop();
+	//		swap(cur->left, cur->right);
+	//		if()
+	//	}
+	//	return root;
+	//}
 
 	////第三，层序遍历
 	//TreeNode* invertTree(TreeNode* root) {

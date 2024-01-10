@@ -10,30 +10,54 @@ using namespace std;
 */
 
 //思想：先在原字符串上合适的增加长度，而后从后往前的双指针赋值
+
 class Solution {
 public:
 	string replaceSpace(string s) {
 		int count = 0;
 		int oldSize = s.size() - 1;
-		for (int i = 0; i < s.size(); i++) {
-			if (s[i] == ' ') count++;
+		for (char c : s) {
+			if (c == ' ') count++;
 		}
-
-		s.resize(s.size() + count * 2);
-		int newSize = s.size() - 1;
-		for (int i = oldSize, j = newSize; i < j; i--, j--) {
-			if (s[i] == ' ') {
-				s[j--] = '0';
-				s[j--] = '2';
-				s[j] = '%';
+		s.resize(s.size() + 2 * count);
+		for (int i = s.size() - 1, j = oldSize; i > j; i--, j--) {
+			if (s[j] != ' ') {
+				s[i] = s[j];
 			}
 			else {
-				s[j] = s[i];
+				s[i] = '0';
+				s[--i] = '2';
+				s[--i] = '%';
 			}
 		}
 		return s;
 	}
 }solution;
+
+//class Solution {
+//public:
+//	string replaceSpace(string s) {
+//		int count = 0;
+//		int oldSize = s.size() - 1;
+//		for (int i = 0; i < s.size(); i++) {
+//			if (s[i] == ' ') count++;
+//		}
+//
+//		s.resize(s.size() + count * 2);
+//		int newSize = s.size() - 1;
+//		for (int i = oldSize, j = newSize; i < j; i--, j--) {
+//			if (s[i] == ' ') {
+//				s[j--] = '0';
+//				s[j--] = '2';
+//				s[j] = '%';
+//			}
+//			else {
+//				s[j] = s[i];
+//			}
+//		}
+//		return s;
+//	}
+//}solution;
 
 int main() {
 	string a = "hello world";

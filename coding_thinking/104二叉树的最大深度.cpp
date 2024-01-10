@@ -59,12 +59,30 @@ public:
 
 class Solution {
 public:
+	//int maxDepth(TreeNode* root) {
+	//	if (root == NULL) return 0;
+	//	int leftdep = maxDepth(root->left);
+	//	int rightdep = maxDepth(root->right);
+	//	int depth = 1 + max(leftdep, rightdep);
+	//	return depth;
+	//}
+
+	//后序
 	int maxDepth(TreeNode* root) {
 		if (root == NULL) return 0;
 		int leftdep = maxDepth(root->left);
 		int rightdep = maxDepth(root->right);
-		int depth = 1 + max(leftdep, rightdep);
-		return depth;
+		int dep = 1 + max(leftdep, rightdep);
+		return dep;
+	}
+
+	//前序
+	int result = 0;
+	void maxDepth1(TreeNode* root, int depth) {
+		if (root == NULL) return;
+		result = max(depth, result);
+		maxDepth1(root->left, depth + 1);
+		maxDepth1(root->right, depth + 1);
 	}
 
 	//节点数量

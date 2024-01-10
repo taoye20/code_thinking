@@ -16,6 +16,16 @@ using namespace std;
 输出: [1]
 */
 
+//deque<int> que;
+//
+//void push(int val) {
+//	while (!que.empty() && val > que.back()) {
+//		que.pop_back();
+//	}
+//	que.push_back(val);
+//}
+
+
 class Solution {
 public:
 	//先创造一个单调队列
